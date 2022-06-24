@@ -1,0 +1,11 @@
+app_home:
+  path: /
+  controller: App\Controller\HomeController::index
+
+app_articles:
+  path: /articles
+  controller: App\Controller\ArticleController::allArticles
+
+app_auteurs:
+  path: /auteurs
+  controller: App\Controller\AuteurController::allAuteurs

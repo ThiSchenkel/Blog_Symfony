@@ -1,0 +1,23 @@
+{% extends 'layout.html.twig' %} {% block title %} {{ parent() }} - Accueil {%
+endblock %} {% block content %}
+<div class="row mt-5 justify-content-center text-center">
+  <h1 class="text-info">Dernier article publié:</h1>
+
+  <div>
+  <br><br>
+    <h3>Titre : {{ lastArticle.titre }}</h3>
+    <h6>Auteur : {{ lastArticle.id }}</h6>
+    <h6>
+      Contenu: {{ lastArticle.contenu | slice(0,150)}} ...
+      <a href="#">Lire la suite</a>
+    </h6>
+    <h6>
+      Date de création :
+      {{ lastArticle.dateDeCreation | date("d/m/y \à H\\hi")}}
+    </h6>
+    <h6>
+      Modifié le : {{ lastArticle.dateDeModification | date("d/m/y \à H\\hi") }}
+    </h6>
+  </div>
+</div>
+{% endblock %}
