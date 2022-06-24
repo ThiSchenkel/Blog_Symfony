@@ -1721,6 +1721,7 @@
             "time": "2021-05-03T11:20:27+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "symfony/apache-pack",
             "version": "v1.0.1",
             "source": {
@@ -1747,6 +1748,8 @@
             "time": "2017-12-12T01:46:35+00:00"
         },
         {
+=======
+>>>>>>> 78140d6c94a5140f247921bdac6cc3f1487f0b45
             "name": "symfony/cache",
             "version": "v5.4.9",
             "source": {
