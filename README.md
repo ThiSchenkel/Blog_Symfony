@@ -21,5 +21,6 @@
 
 8. créez la methode qui vous permet de supprimer un auteur
 
-=> Créer l'entité Article ainsi que les mêmes indications que pour Auteur
-=> Déployement sur Heroku : https://floating-bastion-58172.herokuapp.com/
+9. => Créer l'entité Article ainsi que les mêmes indications que pour Auteur
+
+10. => Déployement sur Heroku : https://floating-bastion-58172.herokuapp.com/
