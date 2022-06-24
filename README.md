@@ -19,3 +19,6 @@
 7) créez la methode qui vous permet de modifier les informations d'un auteur via le formulaire
 
 8) créez la methode qui vous permet de supprimer un auteur
+
+=> Créer l'entité Article ainsi que les mêmes indications que pour Auteur
+
