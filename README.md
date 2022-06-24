@@ -1,4 +1,4 @@
-# Blog_Symfony - TP avec le framework Symfony PHP:
+# Blog Symfony - TP avec le framework Symfony PHP
 
 1. Créer l'entité Auteur avec les propriétés suivantes :
 
