@@ -1,0 +1,42 @@
+{% extends 'layout.html.twig' %} {% block title %}{{ parent() }}{% endblock %}
+{% block content %}
+<div class="row mt-5 justify-content-center text-center">
+
+  <h1 class="text-info">Tous les articles publiés</h1>
+
+  <div class="container">
+    <br /><br />
+    <div class="row">
+      {% for article in allArticles %}
+
+      <div class="col col-md-3 mt-3">
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <div>
+              <a href="{{ path("update_article", {id:article.id})}}"
+                ><i class="fas fa-edit mx-1 text-success"></i>
+              </a>
+                            <a href="{{ path("delete_article", {id:article.id})}}"
+                ><i class="fas fa-trash mx-1 text-danger" onclick="return confirm(`Etes vous sur de vouloir supprimer cet article? `)"></i>     </a>
+            </div>
+            <h5 class="card-title">{{ article.titre }}</h5>
+            <p class="card-text">
+              Date de création :
+              {{ article.dateDeCreation | date("d/m/y \à H\\hi")}}
+            </p>
+            <p class="card-text">
+              Modifié le :
+              {{ article.dateDeModification | date("d/m/y \à H\\hi") }}
+            </p>
+            <h6>Auteur :</h6>
+            <p class="card-text">{{ article.contenu | slice(0,150)}} ...</p>
+            <button class="btn btn-info"><a href="{{ path("one_article", {id:article.id})}}">Lire la suite</a></button>
+          </div>
+        </div>
+      </div>
+
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}
